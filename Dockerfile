@@ -38,7 +38,7 @@ RUN if [ "x$(ls ${BUILD_DEBS}/)" = "x" ]; then \
 COPY entrypoint.sh ${ROOTFS}/usr/local/bin/entrypoint.sh
 RUN chmod +x ${ROOTFS}/usr/local/bin/entrypoint.sh
 
-FROM actions/bash:4.4.18-5
+FROM actions/bash:4.4.18-7
 LABEL maintainer = "ilja+docker@bobkevic.com"
 
 ARG ROOTFS=/build/rootfs
