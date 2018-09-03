@@ -1,6 +1,6 @@
 FROM ubuntu:bionic as build
 
-ARG REQUIRED_PACKAGES="google-cloud-sdk=209.0.0-0"
+ARG REQUIRED_PACKAGES="google-cloud-sdk=214.0.0-0 less ncurses-base"
 
 ENV ROOTFS /build/rootfs
 ENV BUILD_DEBS /build/debs
