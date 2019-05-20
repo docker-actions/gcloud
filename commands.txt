@@ -1,4 +1,5 @@
-gcloud
-gsutil
-bq
-docker-credential-gcloud
+export IMAGE_NAME=gcloud;                     export IMAGE_TAG=246.0.0;   export REQUIRED_PACKAGES="google-cloud-sdk less ncurses-base"
+export IMAGE_NAME=gsutil;                     export IMAGE_TAG=246.0.0;   export REQUIRED_PACKAGES="google-cloud-sdk less ncurses-base"
+export IMAGE_NAME=bq;                         export IMAGE_TAG=246.0.0;   export REQUIRED_PACKAGES="google-cloud-sdk less ncurses-base"
+export IMAGE_NAME=docker-credential-gcloud;   export IMAGE_TAG=246.0.0;   export REQUIRED_PACKAGES="google-cloud-sdk less ncurses-base"
+export IMAGE_NAME=kubectl;                    export IMAGE_TAG=246.0.0;   export REQUIRED_PACKAGES="google-cloud-sdk less ncurses-base kubectl"
