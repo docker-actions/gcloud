@@ -55,6 +55,8 @@ RUN set -Eeuo pipefail; \
       chmod +x ${ROOTFS}/sbin/$(basename $b); \
     done
 
+RUN ln -s python2.7 ${ROOTFS}/usr/bin/python2
+
 COPY ${IMAGE_NAME}.entrypoint.sh ${ROOTFS}/usr/local/bin/entrypoint.sh
 RUN chmod +x ${ROOTFS}/usr/local/bin/entrypoint.sh
 
